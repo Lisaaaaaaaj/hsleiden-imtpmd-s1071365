@@ -8,60 +8,45 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
+    
+    <RelativeLayout
+	     android:id="@+id/RelativeLayout01"
+	     android:layout_width="match_parent"
+	     android:layout_height="65dp"
+	     android:layout_alignParentTop="true"
+	     android:layout_centerHorizontal="true"
+	     android:layout_marginTop="138dp"
+	     android:background="@drawable/rectangle" >
+	     
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-		
-	 <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
-        android:layout_alignRight="@+id/relativeLayout1"
-        android:background="@null"
-        android:onClick="zoekresultaten"
-        android:text="Zoek" />
-		
-	 <RelativeLayout
-        android:id="@+id/RelativeLayout01"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_alignLeft="@+id/relativeLayout3"
-        android:layout_below="@+id/relativeLayout3"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/rectangle" >
+	     <ImageView
+	         android:id="@+id/ImageView01"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentLeft="true"
+	         android:layout_alignParentTop="true"
+	         android:layout_margin="10dp"
+	         android:onClick="klikEvenement"
+	         android:src="@drawable/ic_launcher" />
 
-        <ImageView
-            android:id="@+id/ImageView01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_margin="10dp"
-            android:onClick="klikEvenement"
-            android:src="@drawable/ic_launcher" />
+	     <TextView
+	         android:id="@+id/TextView02"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignLeft="@+id/TextView01"
+	         android:layout_below="@+id/TextView01"
+	         android:onClick="klikEvenement"
+	         android:text="Naam Evenement" />
 
-        <TextView
-            android:id="@+id/TextView02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/TextView01"
-            android:layout_below="@+id/TextView01"
-            android:onClick="klikEvenement"
-            android:text="Naam Evenement" />
-
-        <TextView
-            android:id="@+id/TextView01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView5"
-            android:layout_marginTop="2dp"
-            android:layout_toRightOf="@+id/ImageView01"
-            android:onClick="klikEvenement"
-            android:text="Datum Evenement" />
-    </RelativeLayout>	
+	     <TextView
+	         android:id="@+id/TextView01"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/imageView5"
+	         android:layout_marginTop="2dp"
+	         android:layout_toRightOf="@+id/ImageView01"
+	         android:onClick="klikEvenement"
+	         android:text="Datum Evenement" />
+	 </RelativeLayout>
 
 </RelativeLayout>
