@@ -1,6 +1,7 @@
 package hsleiden.imtpmd.s1071365;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment; // deze i.p.v. android.v4.app.Fragment anders 
+										// fl.add(settingsFragment); in de klasse SettingsFragment niet goed
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +21,7 @@ public class SettingsFragment extends Fragment implements OnClickListener
 		super.onCreate(savedInstanceState);
 	}
 	
-	public View onCreateView(LayoutInflater ly, ViewGroup vg, Bundle savedInstanceState)
+	public View onCreateView(LayoutInflater ly, ViewGroup vg, Bundle sis)
 	{
 		rv = ly.inflate(R.layout.fragment_main_settings, vg, false);
 		
