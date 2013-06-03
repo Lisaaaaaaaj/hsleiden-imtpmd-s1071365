@@ -3,6 +3,7 @@
 
     <string name="app_name">Hsleiden.imtpmd.s1071365</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="title_section1">Settings</string>
+    <string name="title_section2">Week</string>
 
 </resources>
