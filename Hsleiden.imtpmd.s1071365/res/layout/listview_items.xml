@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/itemNaam"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:text="Text" />
+
+    <CheckBox
+        android:id="@+id/itemCheckbx01"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:gravity="center_vertical|start"
+        android:minWidth="10dp" />
+
+    <CheckBox
+        android:id="@+id/itemCheckbx02"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:gravity="center_vertical|start"
+        android:minWidth="10dp"
+        android:text="" />
+
+    <!--  <Spinner
+        android:id="@+id/spin"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:entries="@array/array_naam" /> --> 
 
 </LinearLayout>

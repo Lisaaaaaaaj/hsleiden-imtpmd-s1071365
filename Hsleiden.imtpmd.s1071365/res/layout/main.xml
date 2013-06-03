@@ -1,70 +1,23 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/RL1"
+    android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/achtergrond"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
-    tools:context=".MainActivity" > <!--Focusable zorgt ervoor dat de keyboard verborgen blijft   -->
+    tools:context=".MainActivity" >
 
-	<Button
-	    android:id="@+id/button1"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentTop="true"
-	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="19dp"
-	    android:background="@null"
-	    android:onClick="zoekresultaten"
-	    android:text="Verstuur" />
+    <!--
+    This title strip will display the currently visible page title, as well as the page
+    titles for adjacent pages.
+    -->
 
-	<TextView
-	    android:id="@+id/textView1"
-	    android:layout_width="150dp"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/button1"
-	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="30dp"
-	    android:background="#FFFFFF"
-	    android:text="Naam"
-	    android:textAppearance="?android:attr/textAppearanceLarge" />
-	
-	<TextView
-	    android:id="@+id/textView2"
-	    android:layout_width="150dp"
-	    android:layout_height="wrap_content"
-	    android:layout_alignLeft="@+id/textView1"
-	    android:layout_below="@+id/textView1"
-	    android:layout_marginTop="43dp"
-	    android:background="#FFFFFF"
-	    android:text="Vraag"
-	    android:textAppearance="?android:attr/textAppearanceLarge" />
+    <android.support.v4.view.PagerTitleStrip
+        android:id="@+id/pager_title_strip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#70ED3B"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:textColor="#fff" />
 
-	<TextView
-	    android:id="@+id/textView3"
-	    android:layout_width="150dp"
-	    android:layout_height="wrap_content"
-	    android:layout_alignLeft="@+id/textView2"
-	    android:layout_below="@+id/textView2"
-	    android:layout_marginTop="43dp"
-	    android:background="#FFFFFF"
-	    android:text="Ip-adres"
-	    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-	<TextView
-	    android:id="@+id/textView4"
-	    android:layout_width="150dp"
-	    android:layout_height="wrap_content"
-	    android:layout_alignLeft="@+id/textView3"
-	    android:layout_below="@+id/textView3"
-	    android:layout_marginTop="43dp"
-	    android:background="#FFFFFF"
-	    android:text="Poort"
-	    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-</RelativeLayout>
+</android.support.v4.view.ViewPager>

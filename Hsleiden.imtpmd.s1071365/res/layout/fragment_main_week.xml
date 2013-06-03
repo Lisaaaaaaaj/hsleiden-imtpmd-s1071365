@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-    
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/orange" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtView01"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:text="Opdracht" />
+
+            <TextView
+                android:id="@+id/txtView02"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:text="Af" />
+
+            <TextView
+                android:id="@+id/txtView03"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Nut"
+                					/>
+
+            <TextView
+                android:id="@+id/txtView04"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Niveau"
+               						/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="false"
+             >
+        </ListView>
+    </LinearLayout>
 
 </RelativeLayout>
