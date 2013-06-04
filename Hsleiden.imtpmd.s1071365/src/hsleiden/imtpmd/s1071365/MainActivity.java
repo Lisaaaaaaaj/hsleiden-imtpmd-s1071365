@@ -1,8 +1,6 @@
 package hsleiden.imtpmd.s1071365;
 
 import android.os.Bundle;
-import android.app.Activity;
-import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.app.ActionBar;
@@ -20,7 +18,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 	PagerAdapter pagerAdapter;
 	ViewPager viewPager;
 	
-	protected void onCreate(Bundle savedInstanceState)
+	public void onCreate(Bundle savedInstanceState) //van protected public gemaakt
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
