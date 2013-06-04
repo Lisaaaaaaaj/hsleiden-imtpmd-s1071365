@@ -28,11 +28,11 @@
         android:minWidth="10dp"
         android:text="" />
 
-    <!--  <Spinner
+    <Spinner
         android:id="@+id/spin"
         android:layout_width="48dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
-        android:entries="@array/array_naam" /> --> 
+        android:entries="@array/array_naam" /> 
 
 </LinearLayout>

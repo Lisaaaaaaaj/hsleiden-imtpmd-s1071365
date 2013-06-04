@@ -50,8 +50,7 @@ public class SettingsFragment extends Fragment implements OnClickListener
 		int poort = Integer.parseInt(editTxtPort.getText().toString());
 		
 		//nieuwe verbinding maken met de server
-		this.setSc(new ServerCommunicator(this, name, question, ipAdres, poort));
-		
+		this.setSc(new ServerCommunicator(this, name, question, ipAdres, poort));		
 		
 	}
 
@@ -63,6 +62,12 @@ public class SettingsFragment extends Fragment implements OnClickListener
 	public void setSc(ServerCommunicator sc)
 	{
 		this.sc = sc;
+	}
+
+	public void setReceivedServerMessage(String reply)
+	{
+		// TODO Auto-generated method stub
+		((MainActivity) getActivity()).shareData(reply);
 	}
 
 }

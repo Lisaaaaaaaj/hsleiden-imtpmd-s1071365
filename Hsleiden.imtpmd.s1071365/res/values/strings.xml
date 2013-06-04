@@ -8,6 +8,9 @@
     <color name="pink">#FF8399</color>
     <color name="orange">#FF9662</color>
     
-    
+    <string-array name="array_naam">
+        <item>Hard</item>
+        <item>Easy</item>
+    </string-array>   
 
 </resources>

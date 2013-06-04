@@ -23,7 +23,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		
-		 //opstellen van de actionbar
+		//opstellen van de actionbar
 		final ActionBar ab = getActionBar();
 		ab.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		
@@ -70,6 +70,12 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		//voegt items toe aan de actionbar als het moet
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	
+	public void shareData(String reply)
+	{
+		// TODO Auto-generated method stub
+		weekFragment.shareData(reply);
 	}
 
 	@Override

@@ -1,13 +1,14 @@
 package hsleiden.imtpmd.s1071365;
 
 import java.util.ArrayList;
-
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
-
 //import android.app.LauncherActivity.ListItem; //importeerde hij mee, maar gaf foutmelding bij het aanmaken 
 												//bij regel 35 t/m 41
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,5 +42,22 @@ public class WeekFragment extends Fragment
 		al.add(new ListItem(7, "Week 7"));
 		
 		return rv;
+	}
+
+	public void shareData(String reply)
+	{
+		// TODO Auto-generated method stub
+		jsonO = null;
+		
+		try
+		{
+			jsonO = new JSONObject(reply);
+			JSONArray JSONopdracht = jsonO.getJSONArray("opdracht");
+			Log.d("json", JSONopdracht.toString());
+		}
+		catch (JSONException e)
+		{
+			e.printStackTrace();
+		}
 	}
 }
