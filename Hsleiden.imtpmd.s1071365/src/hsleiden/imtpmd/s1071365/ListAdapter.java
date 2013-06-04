@@ -19,7 +19,7 @@ public class ListAdapter extends BaseAdapter
 	{
 		//bestaande arraylist om data eruit te halen, uit de lijst
 		this.al = al;
-	}	
+	}	 
 	
 	@Override
 	public int getCount()

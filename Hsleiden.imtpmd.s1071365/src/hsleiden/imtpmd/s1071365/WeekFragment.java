@@ -39,7 +39,7 @@ public class WeekFragment extends Fragment
 		al.add(new ListItem(4, "Week 4"));
 		al.add(new ListItem(5, "Week 5"));
 		al.add(new ListItem(6, "Week 6"));
-		al.add(new ListItem(7, "Week 7"));
+		al.add(new ListItem(7, "Week 7")); 
 		
 		return rv;
 	}
