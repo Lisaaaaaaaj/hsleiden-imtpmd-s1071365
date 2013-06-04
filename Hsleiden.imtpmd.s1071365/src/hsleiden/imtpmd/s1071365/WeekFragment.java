@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 import org.json.JSONObject;
 
-import android.app.LauncherActivity.ListItem;
+//import android.app.LauncherActivity.ListItem; //importeerde hij mee, maar gaf foutmelding bij het aanmaken 
+												//bij regel 35 t/m 41
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
