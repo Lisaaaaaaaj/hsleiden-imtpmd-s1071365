@@ -41,7 +41,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		viewPager = (ViewPager) findViewById(R.id.pager);
 		viewPager.setAdapter(pagerAdapter);
 		
-		//door de OnpageListener worden de tabs verwisseld d.m.v. swipe
+		/*//door de OnpageListener worden de tabs verwisseld d.m.v. swipe
 		//de OnPageListener is een onderdeel van de viewPager
 		viewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener()
 		{
@@ -50,7 +50,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 				ab.setSelectedNavigationItem(positie);
 			}
 		}
-		);
+		);*/ //code zou het balkje mee moeten verschuiven naar de tab waarnaar geswiped word, maar werkt niet
 		
 		//het instellen van de tabbladen, waartussen gewisseld kan worden
 		Tab settingsFragment = ab.newTab();

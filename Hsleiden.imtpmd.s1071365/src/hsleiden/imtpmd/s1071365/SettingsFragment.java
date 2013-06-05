@@ -16,6 +16,11 @@ public class SettingsFragment extends Fragment implements OnClickListener
 	public View rv; 
 	private ServerCommunicator sc;
 	
+	public SettingsFragment()
+	{
+		//moet bestaan, maar wordt niet gebruikt
+	}
+	
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
