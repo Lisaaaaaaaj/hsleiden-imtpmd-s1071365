@@ -1,7 +1,5 @@
 package hsleiden.imtpmd.s1071365;
 
-import android.support.v4.app.Fragment; // deze i.p.v. android.v4.app.Fragment anders 
-										// fl.add(settingsFragment); in de klasse SettingsFragment niet goed
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +7,15 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.support.v4.app.Fragment; // deze i.p.v. android.v4.app.Fragment anders  
+// fl.add(settingsFragment); in de klasse SettingsFragment niet goed
+
+/**
+ * Klasse SettingsFragment
+ * @author Lisa Uiterwijk
+ * @version 1.0
+ *
+ */
 
 public class SettingsFragment extends Fragment implements OnClickListener
 {

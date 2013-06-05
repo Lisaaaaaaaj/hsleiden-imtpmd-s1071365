@@ -5,7 +5,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 //import android.app.LauncherActivity.ListItem; //importeerde hij mee, maar gaf foutmelding bij het aanmaken 
-												//bij regel 35 t/m 41
+												//bij regel 41 t/m 49
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -13,6 +13,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+
+/**
+ * Klasse WeekFragment
+ * @author Lisa Uiterwijk
+ * @version 1.0
+ *
+ */
 
 public class WeekFragment extends Fragment
 {

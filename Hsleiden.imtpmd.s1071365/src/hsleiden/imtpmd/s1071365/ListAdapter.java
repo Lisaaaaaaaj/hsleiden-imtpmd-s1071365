@@ -7,6 +7,13 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+/**
+ * Klasse ListAdapter
+ * @author Lisa Uiterwijk
+ * @version 1.0
+ *
+ */
+
 public class ListAdapter extends BaseAdapter
 {
 	//de lijst met de items

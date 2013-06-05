@@ -1,5 +1,12 @@
 package hsleiden.imtpmd.s1071365;
 
+/**
+ * Klasse ListItem
+ * @author Lisa Uiterwijk
+ * @version 1.0
+ *
+ */
+
 public class ListItem
 {
 	public int identity;

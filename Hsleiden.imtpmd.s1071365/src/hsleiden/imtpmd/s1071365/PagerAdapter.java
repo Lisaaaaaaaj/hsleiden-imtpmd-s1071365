@@ -6,6 +6,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+/**
+ * Klasse PagerAdapter
+ * @author Lisa Uiterwijk
+ * @version 1.0
+ *
+ */
+
 public class PagerAdapter extends FragmentPagerAdapter
 {
 	//in deze klasse wordt een lijst bijgehouden met alle fragments

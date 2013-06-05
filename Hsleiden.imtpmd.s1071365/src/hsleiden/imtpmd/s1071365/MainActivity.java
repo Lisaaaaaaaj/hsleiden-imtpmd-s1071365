@@ -11,6 +11,13 @@ import java.util.List;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 
+/**
+ * Klasse MainActivity - Opstartklasse
+ * @author Lisa Uiterwijk
+ * @version 1.0
+ *
+ */
+
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener
 {
 	SettingsFragment settingsFragment;
