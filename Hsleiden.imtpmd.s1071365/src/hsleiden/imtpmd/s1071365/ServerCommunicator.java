@@ -31,6 +31,16 @@ public class ServerCommunicator implements Runnable
 	private int poort;
 	private String reply = null;
 	
+	/**
+	 * constructor
+	 * @param sf	positie van sf wordt doorgegeven
+	 * @param name	positie van name wordt doorgegeven
+	 * @param question	positie van question wordt doorgegeven
+	 * @param ip_adres	positie van ip_adres wordt doorgegeven
+	 * @param poort	 positie van poort wordt doorgegeven
+	 * nieuwe thread wordt aangemaakt en gestart
+	 */
+	
 	public ServerCommunicator(SettingsFragment sf, String name, String question, String ip_adres, int poort)
 	{
 		//updaten van userinterface door gebruik van activiteit
@@ -46,6 +56,10 @@ public class ServerCommunicator implements Runnable
 		this.draad = new Thread(this);
 		this.draad.start();
 	}
+	
+	/**
+	 * methode om de thread te laten lopen i.c.m. de klasse SettingsFragment en de methode shareData
+	 */
 	
 	//run methode aangeroepen door eigen thread 
 	@Override
@@ -79,6 +93,13 @@ public class ServerCommunicator implements Runnable
 		this.sf.setReceivedServerMessage(reply);
 	}
 	
+	/**
+	 * 
+	 * @param bericht	positie bericht wordt doorgegeven
+	 * @param socket	positie socket wordt doorgegeven
+	 * eigen bericht
+	 */
+	
 	public void stuurBericht(String bericht, Socket socket)
 	{
 		OutputStreamWriter osw = null;
@@ -100,6 +121,13 @@ public class ServerCommunicator implements Runnable
 			
 		}
 	}
+	
+	/**
+	 * 
+	 * @param socket  positie socket wordt doorgegeven
+	 * @return  bericht2 wordt teruggegeven
+	 * bericht server
+	 */
 	
 	//bericht server
 	public String waitForResponse(Socket socket)
@@ -133,10 +161,20 @@ public class ServerCommunicator implements Runnable
 		
 	}
 	
+	/**
+	 * 
+	 * @param name	name wordt ingesteld
+	 */
+	
 	public void setNaam(String name)
 	{
 		this.name = name;
 	}
+	
+	/**
+	 * 
+	 * @return	name wordt teruggegeven
+	 */
 	
 	public String getNaam()
 	{

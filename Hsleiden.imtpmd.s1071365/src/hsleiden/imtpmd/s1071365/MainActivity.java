@@ -25,6 +25,13 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 	PagerAdapter pagerAdapter;
 	ViewPager viewPager;
 	
+	/**
+	 * constructor
+	 * @param savedInstanceState	algehele methode die zorgt dat de applicatie juist start
+	 * ( gelijk aan main(String args[]) )
+	 * het aanmaken en instellen van de twee tabbladen gebeurd hier
+	 */
+	
 	public void onCreate(Bundle savedInstanceState) //van protected public gemaakt
 	{
 		super.onCreate(savedInstanceState);
@@ -48,7 +55,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		viewPager = (ViewPager) findViewById(R.id.pager);
 		viewPager.setAdapter(pagerAdapter);
 		
-		/*//door de OnpageListener worden de tabs verwisseld d.m.v. swipe
+		//door de OnpageListener worden de tabs verwisseld d.m.v. swipe
 		//de OnPageListener is een onderdeel van de viewPager
 		viewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener()
 		{
@@ -57,7 +64,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 				ab.setSelectedNavigationItem(positie);
 			}
 		}
-		);*/ //code zou het balkje mee moeten verschuiven naar de tab waarnaar geswiped word, maar werkt niet
+		); 
 		
 		//het instellen van de tabbladen, waartussen gewisseld kan worden
 		Tab settingsFragment = ab.newTab();
@@ -68,9 +75,14 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		Tab weekFragment = ab.newTab();
 		weekFragment.setText("Week Tab");
 		weekFragment.setTabListener(this);
-		ab.addTab(settingsFragment);
+		ab.addTab(weekFragment); //stond eerst settingsFragment; code regel 53 t/m 60 werkt nu wel
 	} 
 
+	/**
+	 * @param menu	het bijhouden en eventueel toevoegen van items aan de actionbar/menu
+	 * @return	stuurt boolean true terug
+	 */
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
@@ -79,11 +91,20 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		return true;
 	}
 	
+	/**
+	 * 
+	 * @param reply	 ontvangt de shareData van de weekFragment
+	 */
+	
 	public void shareData(String reply)
 	{
 		// TODO Auto-generated method stub
 		weekFragment.shareData(reply);
 	}
+	
+	/**
+	 *  onderstaande methoden worden niet gebruikt
+	 */
 
 	@Override
 	public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft)

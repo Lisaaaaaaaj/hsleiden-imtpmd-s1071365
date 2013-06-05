@@ -21,12 +21,21 @@ public class ListAdapter extends BaseAdapter
 	
 	private ArrayList<ListItem> al;
 	
+	/**
+	 * constructor
+	 * @param al  item uit ArrayList wordt eruit gehaald
+	 */
+	
 	//constructor	
 	public ListAdapter(ArrayList<ListItem> al)
 	{
 		//bestaande arraylist om data eruit te halen, uit de lijst
 		this.al = al;
-	}	 
+	}	
+	
+	/**
+	 * @return  stuurt al.size() terug
+	 */
 	
 	@Override
 	public int getCount()
@@ -35,6 +44,10 @@ public class ListAdapter extends BaseAdapter
 		//het aantal objecten dat in de itemArrayList staan wordt terug gegeven
 		return al.size();
 	}
+	
+	/**
+	 * @return  stuurt al.get(arg0) terug
+	 */
 
 	@Override
 	public Object getItem(int arg0)
@@ -45,6 +58,11 @@ public class ListAdapter extends BaseAdapter
 		return al.get(arg0);
 	}
 
+	
+	/**
+	 * @return  stuurt arg0 terug
+	 */
+	
 	@Override
 	public long getItemId(int arg0)
 	{
@@ -53,6 +71,14 @@ public class ListAdapter extends BaseAdapter
 		return arg0;
 	}
 
+	/**
+	 * @param arg0  positie van arg0 wordt doorgegeven
+	 * @param arg1  positie van arg1 wordt doorgegeven
+	 * @param arg2  positie van arg2 wordt doorgegeven
+	 * de methode View getView regelt dat de juiste items op de juiste plek komen te staan, en gevuld 
+	 * (text en check)
+	 */
+	
 	@Override
 	public View getView(int arg0, View arg1, ViewGroup arg2)
 	{

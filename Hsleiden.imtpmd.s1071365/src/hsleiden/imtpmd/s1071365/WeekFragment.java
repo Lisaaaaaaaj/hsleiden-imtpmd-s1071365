@@ -25,15 +25,31 @@ public class WeekFragment extends Fragment
 {
 	public JSONObject jsonO;
 	
+	/**
+	 * constructor
+	 */
+	
 	public WeekFragment()
 	{
 		//moet bestaan, maar wordt niet gebruikt
 	}
 	
+	/**
+	 * methode die ervoor zorgt dat de klasse gecreëerd kan worden ( gelijk aan main(String args[]) )
+	 */
+	
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 	}
+	
+	/**
+	 * @param inhoud ly wordt doorgegeven
+	 * @param vg  inhoud vg wordt doorgegeven
+	 * @param sis  inhoud sis wordt doorgegeven
+	 * @return  rv wordt teruggegeven
+	 * de arraylist wordt hier aangemaakt en gevuld i.c.m de klasse ListItem en ListAdapter
+	 */
 	
 	public View onCreateView(LayoutInflater ly, ViewGroup vg, Bundle sis)
 	{
@@ -58,6 +74,12 @@ public class WeekFragment extends Fragment
 		
 		return rv;
 	}
+	
+	/**
+	 * 
+	 * @param reply  de positie van reply wordt doorgegeven
+	 * nieuw JSONObject i.c.m. de reply wordt aangemaakt
+	 */
 
 	public void shareData(String reply)
 	{

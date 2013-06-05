@@ -17,6 +17,13 @@ public class PagerAdapter extends FragmentPagerAdapter
 {
 	//in deze klasse wordt een lijst bijgehouden met alle fragments
 	private ArrayList<Fragment> fl;
+	
+	/**
+	 * constructor
+	 * @param fm  de positie van fm wordt doorgegeven
+	 * @param fl  de positie van fl wordt doorgegeven
+	 * het aanmaken van de ArrayList gebeurd hier
+	 */
 
 	public PagerAdapter(FragmentManager fm, List<Fragment> fl)
 	{
@@ -25,6 +32,11 @@ public class PagerAdapter extends FragmentPagerAdapter
 		//het aanmaken van een nieuwe ArrayList
 		this.fl = (ArrayList<Fragment>) fl;
 	}
+	
+	/**
+	 * @param arg0  de positie van arg0 wordt doorgegeven
+	 * @return  fl.get(arg0) wordt teruggegeven
+	 */
 
 	//wordt aangeroepen wanneer tabwidget fragment wil tonen vanuit index
 	@Override
@@ -35,6 +47,10 @@ public class PagerAdapter extends FragmentPagerAdapter
 		return fl.get(arg0);
 	}
 
+	/**
+	 * @return  fl.size() wordt teruggegeven
+	 */
+	
 	@Override
 	public int getCount()
 	{
